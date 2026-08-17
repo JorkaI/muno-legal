@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · muno</title>
+<meta name="description" content="How muno handles your data.">
+<style>
+  :root{
+    --paper:#FCFCFA;
+    --ink:#191A1E;
+    --muted:#6E727A;
+    --rule:#E4E3DD;
+    --accent:#2D5F53;
+    --flag-bg:#FFF6E0;
+    --flag-ink:#7A5A10;
+    --measure:34rem;
+
+    --font-display:ui-rounded,"SF Pro Rounded","Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter",Roboto,Helvetica,Arial,sans-serif;
+    --font-util:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+
+  *{box-sizing:border-box}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:4rem 1.5rem 6rem;
+  }
+
+  /* ---- masthead ---- */
+
+  .mast{
+    border-bottom:1px solid var(--rule);
+    padding-bottom:2rem;
+    margin-bottom:3rem;
+  }
+
+  .wordmark{
+    font-family:var(--font-display);
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    color:var(--accent);
+    margin:0;
+  }
+
+  h1{
+    font-family:var(--font-display);
+    font-size:2.1rem;
+    font-weight:700;
+    letter-spacing:-0.025em;
+    line-height:1.15;
+    margin:1.5rem 0 0.75rem;
+  }
+
+  .stamp{
+    font-family:var(--font-util);
+    font-size:0.78rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0;
+  }
+
+  .lede{
+    margin:1.5rem 0 0;
+    color:var(--ink);
+  }
+
+  /* ---- sections ---- */
+
+  h2{
+    font-family:var(--font-display);
+    font-size:1.3rem;
+    font-weight:700;
+    letter-spacing:-0.015em;
+    line-height:1.25;
+    margin:3.25rem 0 0.85rem;
+    padding-top:1.75rem;
+    border-top:1px solid var(--rule);
+  }
+
+  h3{
+    font-family:var(--font-display);
+    font-size:1.02rem;
+    font-weight:700;
+    margin:2rem 0 0.5rem;
+  }
+
+  p{margin:0 0 1rem}
+
+  a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+  a:hover{text-decoration-thickness:2px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+  ul{margin:0 0 1rem;padding-left:1.1rem}
+  li{margin-bottom:0.5rem}
+
+  strong{font-weight:650}
+
+  /* ---- entry: the dictionary-style data block ---- */
+
+  .entry{
+    margin:0 0 1.75rem;
+    padding-left:1rem;
+    border-left:2px solid var(--rule);
+  }
+
+  .entry-head{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:1.02rem;
+    margin:0 0 0.35rem;
+  }
+
+  .entry-tag{
+    font-family:var(--font-util);
+    font-size:0.72rem;
+    font-weight:400;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-left:0.5rem;
+    white-space:nowrap;
+  }
+
+  .entry dl{margin:0}
+
+  .entry dt{
+    font-family:var(--font-util);
+    font-size:0.72rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-top:0.6rem;
+  }
+
+  .entry dd{margin:0.1rem 0 0}
+
+  /* ---- processor table ---- */
+
+  .proc{
+    margin:0 0 1.5rem;
+    padding:0.9rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .proc:first-of-type{border-top:1px solid var(--rule)}
+
+  .proc-name{
+    font-family:var(--font-display);
+    font-weight:700;
+    margin:0 0 0.2rem;
+  }
+
+  .proc-what{margin:0;color:var(--ink)}
+
+  .proc-where{
+    font-family:var(--font-util);
+    font-size:0.75rem;
+    letter-spacing:0.03em;
+    color:var(--muted);
+    margin:0.35rem 0 0;
+  }
+
+  /* ---- fill-me flags ---- */
+
+  .flag{
+    display:inline;
+    background:var(--flag-bg);
+    color:var(--flag-ink);
+    font-family:var(--font-util);
+    font-size:0.85em;
+    padding:0.1em 0.4em;
+    border-radius:3px;
+  }
+
+  .note{
+    background:var(--flag-bg);
+    color:var(--flag-ink);
+    border-radius:6px;
+    padding:1rem 1.1rem;
+    margin:0 0 2rem;
+    font-size:0.92rem;
+    line-height:1.55;
+  }
+  .note p{margin:0 0 0.5rem}
+  .note p:last-child{margin:0}
+  .note strong{font-weight:700}
+
+  footer{
+    margin-top:4rem;
+    padding-top:1.75rem;
+    border-top:1px solid var(--rule);
+    font-family:var(--font-util);
+    font-size:0.78rem;
+    letter-spacing:0.03em;
+    color:var(--muted);
+  }
+  footer p{margin:0 0 0.35rem}
+
+  @media (max-width:480px){
+    body{font-size:16px}
+    .wrap{padding:2.5rem 1.25rem 4rem}
+    h1{font-size:1.8rem}
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    a{transition:text-decoration-thickness 120ms ease}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="mast">
+    <p class="wordmark">muno</p>
+    <h1>Privacy Policy</h1>
+    <p class="stamp">Last updated 17 August 2026</p>
+    <p class="lede">muno is a personal vocabulary app. You collect words, and muno turns them into cards with a translation, pronunciation and audio. This page explains what data that involves, who processes it, and what you can ask us to do with it.</p>
+  </header>
+
+  <h2>Who we are</h2>
+
+  <p>muno is operated by <strong>Heorhii Hakhokidze</strong>, a sole proprietor registered in Poland, at Pułaskiego 19, 40-276 Katowice, Poland.</p>
+
+  <p>For the purposes of the EU General Data Protection Regulation (GDPR), we are the data controller for the personal data described below.</p>
+
+  <p>For any privacy question or request, write to <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a>.</p>
+
+  <h2>What we collect</h2>
+
+  <p>We collect only what the app needs in order to work. We do not run advertising, we do not sell data, and we do not track you across other apps or websites.</p>
+
+  <div class="entry">
+    <p class="entry-head">Email address<span class="entry-tag">account</span></p>
+    <dl>
+      <dt>Why we have it</dt>
+      <dd>To create your account, sign you in, and let you reach the same word collection from another device.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+      <dt>Note</dt>
+      <dd>If you sign in with Apple and choose to hide your address, we receive an anonymised Apple relay address instead of your real one, and we never see the real one.</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Account identifier<span class="entry-tag">account</span></p>
+    <dl>
+      <dt>Why we have it</dt>
+      <dd>A random identifier that links your cards and folders to you. It is not derived from anything about you.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">The words you save<span class="entry-tag">content</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>The words and phrases you add, their translations, your folder names, and your progress on each card.</dd>
+      <dt>Why we have it</dt>
+      <dd>This is the product. Your collection is stored so it persists between sessions and devices.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Language settings<span class="entry-tag">preferences</span></p>
+    <dl>
+      <dt>Why we have it</dt>
+      <dd>The language you are learning and the language you want translations shown in, so cards are generated correctly.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Subscription status<span class="entry-tag">billing</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>Whether you have an active muno Unlimited subscription, and when it renews or expires.</dd>
+      <dt>Why we have it</dt>
+      <dd>To unlock the features you paid for.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+      <dt>Note</dt>
+      <dd>Payment is handled entirely by Apple. We never receive or store your card number, billing address or any other payment detail.</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Server logs<span class="entry-tag">technical</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>Standard request logs from our backend, which include an IP address, a timestamp and the request made.</dd>
+      <dt>Why we have it</dt>
+      <dd>To keep the service running, diagnose errors and prevent abuse of the translation and audio functions.</dd>
+      <dt>Legal basis</dt>
+      <dd>Legitimate interest, GDPR Art. 6(1)(f).</dd>
+    </dl>
+  </div>
+
+  <h2>What happens when you add a word</h2>
+
+  <p>This is the one part of muno worth reading closely, because it involves sending text off our own servers.</p>
+
+  <p>When you save a new word, muno needs to produce a translation, a phonetic transcription and audio for it. To do that, the word itself is sent to Google, which returns the translation and the spoken audio. Only the word or phrase and the two language codes are sent. Your email address, your account identifier and the rest of your collection are not sent.</p>
+
+  <p>Generated cards are cached in a shared dictionary so that the same word does not have to be generated twice. That cache holds words, not people: it contains no link to the account that first requested the word.</p>
+
+  <h2>Who processes your data</h2>
+
+  <p>We use a small number of service providers. They act as processors on our behalf and may only use the data to provide their service to us.</p>
+
+  <div class="proc">
+    <p class="proc-name">Supabase</p>
+    <p class="proc-what">Database, file storage, authentication and backend functions. This is where your account and your word collection live.</p>
+    <p class="proc-where">Region: Central EU, Frankfurt (eu-central-1) · Provider based in the United States</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">Google Cloud (Gemini API and Text-to-Speech)</p>
+    <p class="proc-what">Generates the translation, transcription and pronunciation audio for the words you save. Receives the word only.</p>
+    <p class="proc-where">United States and other Google regions</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">Apple</p>
+    <p class="proc-what">Sign in with Apple, App Store distribution, and all subscription payments and refunds.</p>
+    <p class="proc-where">Apple's own privacy policy applies to your Apple Account</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">RevenueCat</p>
+    <p class="proc-what">Verifies your App Store purchase receipt and tells the app whether your subscription is active. Receives your account identifier and purchase status, no payment details.</p>
+    <p class="proc-where">United States</p>
+  </div>
+
+  <h2>Where your data is stored</h2>
+
+  <p>Your account and word collection are stored in our Supabase project Central EU (Frankfurt) region, inside the European Union.</p>
+
+  <p>Some of the providers above are based in the United States, so certain processing takes place outside the European Economic Area. Those transfers rely on the European Commission's Standard Contractual Clauses, or on the EU-US Data Privacy Framework where the provider is certified under it.</p>
+
+  <h2>How long we keep it</h2>
+
+  <ul>
+    <li><strong>Your account and word collection:</strong> for as long as your account exists. If you ask us to delete your account, we remove them.</li>
+    <li><strong>Server logs:</strong> a short rolling window, currently 30 days, after which they are discarded.</li>
+    <li><strong>The shared word cache:</strong> kept indefinitely, because it is not personal data and is not linked to any account.</li>
+    <li><strong>Purchase records:</strong> Apple retains transaction records under its own terms and its own retention periods, which we do not control.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+
+  <p>Under the GDPR you can ask us to:</p>
+
+  <ul>
+    <li>tell you what data we hold about you, and give you a copy of it,</li>
+    <li>correct anything that is wrong,</li>
+    <li>delete your account and everything in it,</li>
+    <li>restrict or object to a particular use of your data,</li>
+    <li>export your data in a portable format,</li>
+    <li>withdraw any consent you have given, at any time.</li>
+  </ul>
+
+  <p>Write to <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a> and we will respond within one month, as the GDPR requires. We will not charge you and we will not ask you to justify the request.</p>
+
+  <p>If you are unhappy with how we handled your request, you can complain to the Polish supervisory authority, the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Warsaw, Poland, or to the data protection authority in your own country.</p>
+
+  <h2>Children</h2>
+
+  <p>muno is not directed at children under 16. We do not knowingly collect personal data from children under that age. If you believe a child has created an account, write to us and we will delete it.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If we change how muno handles data, we will update this page and change the date at the top. If a change materially affects your rights, we will tell you in the app before it takes effect.</p>
+
+  <h2>Contact</h2>
+
+  <p>Heorhii Hakhokidze<br>
+  Pułaskiego 19, 40-276 Katowice, Poland<br>
+  <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a></p>
+
+  <footer>
+    <p>muno · personal vocabulary</p>
+    <p>Terms of Use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
