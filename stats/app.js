@@ -748,6 +748,9 @@ function reportBody(r) {
       card(
         'За эти дни событий нет',
         r.from === r.to ? 'Сегодня приложение ещё ничего не присылало.' : 'За выбранные дни приложение ничего не присылало.',
+        // Production has the report before anyone has the build that records: say so.
+        h('p', null, 'События присылает приложение с версии 1.2.0: если её ещё ни у кого нет, здесь пусто.'),
+        DEMO ? null : h('div', { class: 'form' }, h('a', { class: 'btn quiet', href: '?demo' }, 'Посмотреть на примере')),
       ),
     );
     return parts;
