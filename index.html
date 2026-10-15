@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · muno</title>
-<meta name="description" content="How muno handles your data.">
+<meta name="description" content="How muno handles your data: what we collect, who processes it, how long we keep it, and what you can ask us to do.">
 <style>
   :root{
     --paper:#FCFCFA;
@@ -80,6 +80,21 @@
     margin:1.5rem 0 0;
     color:var(--ink);
   }
+
+  /* ---- the short version ---- */
+
+  .summary{
+    margin:2rem 0 0;
+    padding:1.1rem 1.25rem;
+    border:1px solid var(--rule);
+    border-left:3px solid var(--accent);
+    border-radius:6px;
+    font-size:0.95rem;
+    line-height:1.55;
+  }
+  .summary p{margin:0 0 0.5rem;font-weight:650}
+  .summary ul{margin:0;padding-left:1.1rem}
+  .summary li{margin-bottom:0.35rem}
 
   /* ---- sections ---- */
 
@@ -176,31 +191,6 @@
     margin:0.35rem 0 0;
   }
 
-  /* ---- fill-me flags ---- */
-
-  .flag{
-    display:inline;
-    background:var(--flag-bg);
-    color:var(--flag-ink);
-    font-family:var(--font-util);
-    font-size:0.85em;
-    padding:0.1em 0.4em;
-    border-radius:3px;
-  }
-
-  .note{
-    background:var(--flag-bg);
-    color:var(--flag-ink);
-    border-radius:6px;
-    padding:1rem 1.1rem;
-    margin:0 0 2rem;
-    font-size:0.92rem;
-    line-height:1.55;
-  }
-  .note p{margin:0 0 0.5rem}
-  .note p:last-child{margin:0}
-  .note strong{font-weight:700}
-
   footer{
     margin-top:4rem;
     padding-top:1.75rem;
@@ -229,13 +219,26 @@
   <header class="mast">
     <p class="wordmark">muno</p>
     <h1>Privacy Policy</h1>
-    <p class="stamp">Last updated 23 August 2026</p>
-    <p class="lede">muno is a personal vocabulary app. You collect words, and muno turns them into cards with a translation, pronunciation and audio. This page explains what data that involves, who processes it, and what you can ask us to do with it.</p>
+    <p class="stamp">Last updated 15 October 2026</p>
+    <p class="lede">muno is a personal vocabulary app. You collect words, and muno turns them into cards with a translation, pronunciation and audio, then schedules when you practise them. This page explains what data that involves, who processes it, how long we keep it, and what you can ask us to do with it. It applies to the muno app and to this website.</p>
+
+    <div class="summary">
+      <p>The short version</p>
+      <ul>
+        <li>We collect what the app needs to work: your email address, the words and decks you save, your settings and progress, and whether you subscribed. Nothing else.</li>
+        <li>Your account and your collection are stored in the European Union, in Frankfurt.</li>
+        <li>When you add a word, the word itself (never anything about you) goes to OpenAI for its translation and to Google or Microsoft for its audio.</li>
+        <li>From version 1.2.0 the app records anonymous usage statistics. They carry no identifier of any kind, and nothing is stored on your phone for them.</li>
+        <li>No advertising, no tracking, no selling of data, no marketing emails.</li>
+        <li>You can delete your account yourself, in the app, at any moment.</li>
+      </ul>
+    </div>
   </header>
 
   <h2>Who we are</h2>
 
   <p>muno is operated by <strong>Heorhii Hakhokidze</strong>, a sole proprietor registered in Poland, at Pułaskiego 19, 40-276 Katowice, Poland.</p>
+  <!-- Recommended: add the NIP (tax identification number) after the address, e.g. "NIP 000-000-00-00". -->
 
   <p>For the purposes of the EU General Data Protection Regulation (GDPR), we are the data controller for the personal data described below.</p>
 
@@ -243,35 +246,39 @@
 
   <h2>What we collect</h2>
 
-  <p>We collect only what the app needs in order to work. We do not run advertising, we do not sell data, and we do not track you across other apps or websites.</p>
+  <p>We collect only what the app needs in order to work. We do not run advertising, we do not sell data, we send no marketing email, and we do not track you across other apps or websites. Each kind of data below says why we have it and the legal basis for it under the GDPR.</p>
 
   <div class="entry">
     <p class="entry-head">Email address<span class="entry-tag">account</span></p>
     <dl>
+      <dt>What this is</dt>
+      <dd>The address you sign in with. If you sign in with Apple or Google, it comes to us from them. Apple lets you hide it: then we receive a private relay address from Apple instead of your real one, and we never see the real one.</dd>
       <dt>Why we have it</dt>
-      <dd>To create your account, sign you in, and let you reach the same word collection from another device.</dd>
+      <dd>To create your account, sign you in with a one-time code, and let you reach the same collection from another device. To email you once, one to two days before a free trial of muno Unlimited turns into a paid subscription, so that the charge never comes as a surprise. To answer you when you write to us.</dd>
       <dt>Legal basis</dt>
       <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
-      <dt>Note</dt>
-      <dd>If you sign in with Apple or Google, your address comes to us from them. Apple lets you hide it: then we receive an anonymised Apple relay address instead of your real one, and we never see the real one.</dd>
+      <dt>Required?</dt>
+      <dd>Yes. The address is the one thing you must give us: without it there is no account. Everything else on this page follows from using the app. An address that is entered but never confirmed with the code is deleted after 7 days.</dd>
     </dl>
   </div>
 
   <div class="entry">
-    <p class="entry-head">Name<span class="entry-tag">account · optional</span></p>
+    <p class="entry-head">Name and profile picture<span class="entry-tag">Google sign-in · not used</span></p>
     <dl>
       <dt>What this is</dt>
-      <dd>If you sign in with Apple or Google and share your name, it is stored on your account profile; Google may also include a link to your profile picture. The app works exactly the same without either.</dd>
+      <dd>Google includes your name and a link to your profile picture in every sign-in, whether or not an app asks for them, and muno asks Google for nothing beyond the sign-in itself. They are kept on your account record because they arrive with it. We do not show or use them anywhere in muno. Sign in with Apple is asked for your email address only, so no name reaches us that way. If you shared your name through Sign in with Apple before October 2026, it may still be on your account record and is treated the same way.</dd>
       <dt>Legal basis</dt>
-      <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b): it is part of the Google sign-in you chose.</dd>
+      <dt>Your choice</dt>
+      <dd>If you would rather we held neither, sign in with your email address instead, or write to us and we will remove them from your account.</dd>
     </dl>
   </div>
 
   <div class="entry">
-    <p class="entry-head">Account identifier<span class="entry-tag">account</span></p>
+    <p class="entry-head">Account identifier and sign-in methods<span class="entry-tag">account</span></p>
     <dl>
-      <dt>Why we have it</dt>
-      <dd>A random identifier that links your cards and folders to you. It is not derived from anything about you.</dd>
+      <dt>What this is</dt>
+      <dd>A random identifier that links your decks, cards and settings to you. It is not derived from anything about you. If you sign in with Apple or Google, we also store the identifier they assign to you, so that they can recognise you at your next sign-in, and which of the three sign-in methods are connected to your account.</dd>
       <dt>Legal basis</dt>
       <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
     </dl>
@@ -281,21 +288,37 @@
     <p class="entry-head">The words you save<span class="entry-tag">content</span></p>
     <dl>
       <dt>What this is</dt>
-      <dd>The words and phrases you add, their translations, your folder names, your progress on each card, and the days you practised — what the app shows as your streak.</dd>
+      <dd>The words and phrases you add, the meaning you chose or wrote for each, your deck names and their order, and which decks you took from the library. For each word, how far you have learned it: the schedule the app keeps for it (how stable it is in your memory, how hard it is for you, when it comes back), whether it counts as learned, and each answer you gave in practice, with the minute it was given. For each day you practised, what the day came to: words done, words planned, and whether the day's goal was met.</dd>
       <dt>Why we have it</dt>
-      <dd>This is the product. Your collection is stored so it persists between sessions and devices.</dd>
+      <dd>This is the product. Your collection is stored so that it persists between sessions and devices, and the schedule is what decides which words the app shows you and when.</dd>
       <dt>Legal basis</dt>
       <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+      <dt>Note</dt>
+      <dd>A word you save also enters a shared dictionary; see <em>What happens when you add a word</em>. A deck you delete waits in <strong>Recently deleted</strong> for 30 days, during which you can bring it back; after that it is removed for good.</dd>
     </dl>
   </div>
 
   <div class="entry">
     <p class="entry-head">App settings<span class="entry-tag">preferences</span></p>
     <dl>
+      <dt>What this is</dt>
+      <dd>The language you are learning and your level in it, the language translations are shown in, the ceiling of your learning day, the emoji you picked as an avatar, and when the app last offered you the subscription, so that it does not ask again too soon.</dd>
       <dt>Why we have it</dt>
-      <dd>The language you are learning, the language you want translations shown in, your level, and small choices like the emoji you picked as an avatar — so cards are generated correctly and the app looks the same on your next device.</dd>
+      <dd>So that cards are generated correctly and the app looks the same on your next device.</dd>
       <dt>Legal basis</dt>
       <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Usage counters<span class="entry-tag">plan limits</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>How many words of your own you added this month, how many automatic translations you used today, a run of entries the dictionary did not recognise, and the size of your collection.</dd>
+      <dt>Why we have it</dt>
+      <dd>The free plan has limits (Settings → <em>Current limits</em>), and these counters are how they are counted. They also protect the translation service from abuse. The monthly count is not reduced when you delete a word. They are kept while your account exists.</dd>
+      <dt>Legal basis</dt>
+      <dd>Performance of a contract, GDPR Art. 6(1)(b), and our legitimate interest in preventing abuse of the service, GDPR Art. 6(1)(f).</dd>
     </dl>
   </div>
 
@@ -303,13 +326,27 @@
     <p class="entry-head">Subscription status<span class="entry-tag">billing</span></p>
     <dl>
       <dt>What this is</dt>
-      <dd>Whether you have an active muno Unlimited subscription, and when it renews or expires.</dd>
+      <dd>Whether you have muno Unlimited, which plan, through which store, whether it is a free trial, when it renews or expires, whether it will renew, and whether we have sent you the trial-ending email. It reaches us from RevenueCat (below) when the store reports a purchase, renewal, cancellation or refund.</dd>
       <dt>Why we have it</dt>
       <dd>To unlock the features you paid for.</dd>
       <dt>Legal basis</dt>
       <dd>Performance of a contract, GDPR Art. 6(1)(b).</dd>
       <dt>Note</dt>
-      <dd>Payment is handled entirely by Apple. We never receive or store your card number, billing address or any other payment detail.</dd>
+      <dd>Payment is handled entirely by the app store you subscribed through: Apple's App Store today, and Google Play once muno is available there. We never receive or store your card number, billing address or any other payment detail.</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Sign-in sessions and the sign-in journal<span class="entry-tag">technical</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>While you are signed in, our authentication service keeps a record of each active session: when it was opened, from which IP address, and from what kind of app. It also writes a journal of sign-ins, sign-outs and session renewals, with the IP address and the time.</dd>
+      <dt>Why we have it</dt>
+      <dd>To keep you signed in securely and to notice misuse of an account.</dd>
+      <dt>Legal basis</dt>
+      <dd>Our legitimate interest in the security of the service, GDPR Art. 6(1)(f).</dd>
+      <dt>How long</dt>
+      <dd>A session until it ends or you sign out. Journal entries are deleted after 30 days.</dd>
     </dl>
   </div>
 
@@ -317,70 +354,153 @@
     <p class="entry-head">Server logs<span class="entry-tag">technical</span></p>
     <dl>
       <dt>What this is</dt>
-      <dd>Standard request logs from our backend, which include an IP address, a timestamp and the request made.</dd>
+      <dd>Standard request logs from our backend, which include an IP address, a timestamp and the request made. The same for the translation and audio functions.</dd>
       <dt>Why we have it</dt>
       <dd>To keep the service running, diagnose errors and prevent abuse of the translation and audio functions.</dd>
       <dt>Legal basis</dt>
-      <dd>Legitimate interest, GDPR Art. 6(1)(f).</dd>
+      <dd>Our legitimate interest in running the service, GDPR Art. 6(1)(f).</dd>
+      <dt>How long</dt>
+      <dd>A short rolling window, never longer than 30 days.</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Usage statistics<span class="entry-tag">anonymous · from version 1.2.0</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>Which screens were shown and in what order, which buttons led where, how long things took (a step of the first-run setup, a translation, a practice session), whether a save or a load failed, the app version, the phone's platform and major system version, the phone's region setting (not its location), the interface and course languages, and whether someone was signed in.</dd>
+      <dt>What it is not</dt>
+      <dd>It carries no account, email, device or advertising identifier; no IP address is kept with it; nothing you typed; and no clock time, only how many seconds into a sitting something happened. A sitting is a random number the app makes up when it opens and forgets when it closes. Nothing is stored on your phone for this, so the next launch cannot be recognised as you, and no third-party analytics tool is involved.</dd>
+      <dt>Why we have it</dt>
+      <dd>To see where people get stuck and how long things take, so that we fix the right screen.</dd>
+      <dt>Where and how long</dt>
+      <dd>In our own database in Frankfurt, deleted after 13 months.</dd>
+      <dt>Legal basis</dt>
+      <dd>These statistics are designed to be anonymous, and anonymous data is outside the GDPR. To the extent any part of them could still be regarded as personal data, we rely on our legitimate interest in understanding how the app is used, GDPR Art. 6(1)(f). Nothing in them is used to make decisions about anyone.</dd>
+    </dl>
+  </div>
+
+  <div class="entry">
+    <p class="entry-head">Crash reports<span class="entry-tag">technical · optional</span></p>
+    <dl>
+      <dt>What this is</dt>
+      <dd>If you have allowed your phone to share diagnostics with app developers, Apple (and Google Play, on Android) passes us crash reports: the device model, the system version and the technical details of the crash. They contain no account information, and we use no third-party crash reporting tool.</dd>
+      <dt>Legal basis</dt>
+      <dd>Our legitimate interest in fixing the app, GDPR Art. 6(1)(f).</dd>
     </dl>
   </div>
 
   <h2>What happens when you add a word</h2>
 
-  <p>This is the one part of muno worth reading closely, because it involves sending text off our own servers.</p>
+  <p>This is the one part of muno where text leaves our own servers, so it is worth reading closely.</p>
 
-  <p>When you save a new word, muno needs to produce a translation and spoken audio for it. To do that, the word itself is sent to Google, which returns the translation and the audio. Only the word or phrase and the two languages involved are sent. Your email address, your account identifier and the rest of your collection are not sent.</p>
+  <p>When you type a word and ask for its translation, the word travels to our server and from there to <strong>OpenAI</strong>, together with the language it is in and the language or languages to translate into. OpenAI answers whether it is a real word, its dictionary form, its part of speech, its meanings and, for English, a transcription when our own pronunciation dictionary has none. Nothing about you goes with it: not your email address, not your account identifier, not the rest of your collection. We ask OpenAI not to keep the answer. OpenAI may keep the request for up to 30 days to monitor abuse and does not use it to train its models.</p>
 
-  <p>Generated cards are cached in a shared dictionary so that the same word does not have to be generated twice. That cache holds words, not people: it contains no link to the account that first requested the word.</p>
+  <p>This happens when you ask for the translation, even if you then decide not to save the word. The answer is kept for 7 days in a shared draft, so that the next person asking about the same word does not pay for a second answer; the draft records the word, not who asked. Our server also counts the request against your plan's allowance and, if the word was not recognised, checks its spelling on our own server to suggest a correction.</p>
+
+  <p>When you save the word, it becomes an entry in a <strong>shared dictionary</strong>, together with its audio, which <strong>Google Cloud Text-to-Speech</strong> produces for English, Spanish, German, French, Italian and Portuguese and <strong>Microsoft Azure Speech</strong> for Ukrainian and Polish. Each of them receives the word alone. The dictionary holds words, not people: no entry records who added it, and every user of muno can see it.</p>
+
+  <p><strong>Please do not type personal information into a word or phrase</strong>: not your own name, phone number or address, and not anyone else's. It would be treated as a word, sent to the providers above, and could end up in the shared dictionary.</p>
+
+  <p>The ready-made decks in the library are our own content. Taking one copies its words into your account.</p>
 
   <h2>Who processes your data</h2>
 
-  <p>We use a small number of service providers. They act as processors on our behalf and may only use the data to provide their service to us.</p>
+  <p>We use a small number of service providers. They act as processors on our behalf and may only use the data to provide their service to us. Apple and Google are, in addition, independent controllers of the accounts you hold with them.</p>
 
   <div class="proc">
     <p class="proc-name">Supabase</p>
-    <p class="proc-what">Database, file storage, authentication and backend functions. This is where your account and your word collection live.</p>
-    <p class="proc-where">Region: Central EU, Frankfurt (eu-central-1) · Provider based in the United States</p>
+    <p class="proc-what">Database, file storage for the audio, authentication and backend functions. This is where your account and your word collection live.</p>
+    <p class="proc-where">Region: Frankfurt (eu-central-1), on Amazon Web Services · Provider based in the United States</p>
   </div>
 
   <div class="proc">
-    <p class="proc-name">Google Cloud (Gemini API and Text-to-Speech)</p>
-    <p class="proc-what">Generates the translation, transcription and pronunciation audio for the words you save. Receives the word only.</p>
+    <p class="proc-name">OpenAI</p>
+    <p class="proc-what">Generates the translation, dictionary form, part of speech and, where needed, the transcription of a word. Receives the word and the languages involved, nothing else.</p>
+    <p class="proc-where">United States</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">Google Cloud Text-to-Speech</p>
+    <p class="proc-what">Produces the pronunciation audio for English, Spanish, German, French, Italian and Portuguese words. Receives the word only.</p>
     <p class="proc-where">United States and other Google regions</p>
   </div>
 
   <div class="proc">
-    <p class="proc-name">Apple</p>
-    <p class="proc-what">Sign in with Apple, App Store distribution, and all subscription payments and refunds.</p>
-    <p class="proc-where">Apple's own privacy policy applies to your Apple Account</p>
+    <p class="proc-name">Microsoft Azure Speech</p>
+    <p class="proc-what">Produces the pronunciation audio for Ukrainian and Polish words. Receives the word only.</p>
+    <p class="proc-where">Region: Sweden Central, European Union</p>
   </div>
 
   <div class="proc">
-    <p class="proc-name">Google (Sign in with Google)</p>
-    <p class="proc-what">If you choose to sign in with Google, Google confirms who you are and passes us your email address and name. Your Google Account itself stays with Google.</p>
-    <p class="proc-where">Google's own privacy policy applies to your Google Account</p>
+    <p class="proc-name">Resend</p>
+    <p class="proc-what">Delivers the sign-in code emails and the trial-ending email. Receives your email address and the text of the email, and keeps a delivery log for a limited time.</p>
+    <p class="proc-where">Region: European Union (Ireland) · Provider based in the United States</p>
   </div>
 
   <div class="proc">
     <p class="proc-name">RevenueCat</p>
-    <p class="proc-what">Verifies your App Store purchase receipt and tells the app whether your subscription is active. Receives your account identifier, the receipt and your subscription status — never any payment details.</p>
+    <p class="proc-what">Verifies your App Store purchase and tells the app and our server whether your subscription is active. Receives your account identifier, the purchase receipt, your subscription status, your IP address (to determine country and currency), the device type and the app version. Never any payment details.</p>
     <p class="proc-where">United States</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">Apple</p>
+    <p class="proc-what">Sign in with Apple, App Store distribution, the crash reports you opt into, and all subscription payments and refunds.</p>
+    <p class="proc-where">Apple's own privacy policy applies to your Apple Account</p>
+  </div>
+
+  <div class="proc">
+    <p class="proc-name">Google</p>
+    <p class="proc-what">Sign in with Google: Google confirms who you are and passes us your email address, your name and a link to your profile picture. Google Play distribution and payments, once muno is available there.</p>
+    <p class="proc-where">Google's own privacy policy applies to your Google Account</p>
   </div>
 
   <h2>Where your data is stored</h2>
 
-  <p>Your account and word collection are stored in our Supabase project in the Central EU (Frankfurt) region, inside the European Union.</p>
+  <p>Your account and word collection are stored in our Supabase project in Frankfurt, inside the European Union. The audio for Ukrainian and Polish is produced in Sweden, and our emails are sent from Ireland.</p>
 
-  <p>Some of the providers above are based in the United States, so certain processing takes place outside the European Economic Area. Those transfers rely on the European Commission's Standard Contractual Clauses, or on the EU-US Data Privacy Framework where the provider is certified under it.</p>
+  <p>OpenAI, Google Cloud, RevenueCat, Apple and Google's sign-in service are based in the United States, so that processing takes place outside the European Economic Area. Those transfers rely on the EU–US Data Privacy Framework where the provider is certified under it, and otherwise on the European Commission's Standard Contractual Clauses included in our agreements with the provider. You can ask us for a copy of those safeguards.</p>
+
+  <h2>On your device</h2>
+
+  <p>The app keeps a few things on your phone so that it opens instantly: the token that keeps you signed in, your settings and practice preferences, the theme, the days and hour of your reminder, an unfinished practice session, and a working copy of your collection's lists. Before an account exists, the choices you make during the first-run setup are kept on the phone until you sign in. None of this is sent anywhere except as described on this page, and signing out removes your account data from the device.</p>
+
+  <p>The daily reminder is scheduled by your phone itself. There is no push token and no server involved: nothing leaves the phone for it, and the permission lives in your phone's settings.</p>
+
+  <p>The app reads your phone's language once, to pick the interface language, and its region setting, for the statistics above. It does not use the microphone, the camera, your contacts or your location.</p>
 
   <h2>How long we keep it</h2>
 
   <ul>
-    <li><strong>Your account and word collection:</strong> for as long as your account exists. You can delete your account yourself at any moment, in the app — <strong>Settings → Account → Delete account</strong> — and everything is removed at once; or ask us and we will do it.</li>
-    <li><strong>Server logs:</strong> a short rolling window, never longer than 30 days, after which they are discarded.</li>
-    <li><strong>The shared word cache:</strong> kept indefinitely, because it is not personal data and is not linked to any account.</li>
-    <li><strong>Purchase records:</strong> Apple retains transaction records under its own terms and its own retention periods, which we do not control.</li>
+    <li><strong>Your account and word collection:</strong> for as long as your account exists. You can delete it yourself at any moment, in the app (see <em>Deleting your account</em>), or ask us and we will do it.</li>
+    <li><strong>A deleted deck:</strong> 30 days in <em>Recently deleted</em>, then removed for good.</li>
+    <li><strong>An email address entered but never confirmed:</strong> 7 days.</li>
+    <li><strong>Sign-in sessions:</strong> until they end. <strong>The sign-in journal:</strong> 30 days.</li>
+    <li><strong>Server logs:</strong> a short rolling window, never longer than 30 days.</li>
+    <li><strong>Backups of the database:</strong> kept for 7 days, then overwritten in turn; a deleted account disappears from them within that time.</li>
+    <li><strong>The shared draft of a translation:</strong> 7 days. <strong>The shared dictionary:</strong> indefinitely, because it is not personal data and is not linked to any account.</li>
+    <li><strong>Usage statistics:</strong> 13 months.</li>
+    <li><strong>Your subscription record at RevenueCat:</strong> for as long as your account exists; see <em>Deleting your account</em> for what happens after.</li>
+    <li><strong>Purchase records at Apple:</strong> Apple retains transaction records under its own terms and retention periods, which we do not control.</li>
   </ul>
+
+  <h2>Deleting your account</h2>
+
+  <p>In the app: <strong>Settings → Account → Delete account</strong>. You confirm, and the account is erased on the spot: every deck, word, schedule, practice day, setting and counter, in every language you were learning, and then the account itself with its sign-in identities and sessions. There is no waiting period, no email is needed, and nothing can be restored afterwards.</p>
+
+  <p>What remains, and why:</p>
+
+  <ul>
+    <li>The words you added to the shared dictionary stay in it, because they are not linked to you.</li>
+    <li>The usage statistics are unaffected, because they never identified you.</li>
+    <li>RevenueCat keeps the record of your subscription under your random account identifier, which after the deletion points to no one. Write to us and we will have that record deleted too.</li>
+    <li>Apple keeps its own purchase records under your Apple Account, and Google its own under your Google Account.</li>
+    <li>Entries in the sign-in journal and the server logs expire within 30 days.</li>
+    <li>The database's nightly backups hold the account until they are overwritten, within 7 days.</li>
+  </ul>
+
+  <p>If you cannot use the app, write to us from the address the account is registered to and we will delete it for you.</p>
 
   <h2>Your rights</h2>
 
@@ -390,20 +510,25 @@
     <li>tell you what data we hold about you, and give you a copy of it,</li>
     <li>correct anything that is wrong,</li>
     <li>delete your account and everything in it,</li>
-    <li>restrict or object to a particular use of your data,</li>
-    <li>export your data in a portable format,</li>
-    <li>withdraw any consent you have given, at any time.</li>
+    <li>restrict or object to a particular use of your data, including any use based on our legitimate interests,</li>
+    <li>export your data in a portable format.</li>
   </ul>
 
-  <p>The fastest way to delete your account is inside the app itself — <strong>Settings → Account → Delete account</strong> — which removes your account and everything in it immediately, with no email needed.</p>
+  <p>The fastest way to delete your account is inside the app itself, as described above. For everything else, write to <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a> and we will respond within one month, as the GDPR requires. We will not charge you and we will not ask you to justify the request. To protect your account, we may ask you to write from the address it is registered to.</p>
 
-  <p>For everything else, write to <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a> and we will respond within one month, as the GDPR requires. We will not charge you and we will not ask you to justify the request.</p>
+  <p>Nothing muno does relies on your consent, so there is no consent to withdraw inside the app. The permission for reminders belongs to your phone, and you can switch it off in the phone's settings at any time.</p>
 
-  <p>If you are unhappy with how we handled your request, you can complain to the Polish supervisory authority, the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Warsaw, Poland, or to the data protection authority in your own country.</p>
+  <p>We make no automated decisions with legal or similarly significant effects about you. The schedule that decides when a word comes back is automatic, but it affects only what the app shows you.</p>
 
-  <h2>What muno is — and is not</h2>
+  <p>If you are unhappy with how we handled your request, you can complain to the Polish supervisory authority, the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Warsaw, Poland, or to the data protection authority in your own country; in the United Kingdom that is the Information Commissioner's Office.</p>
 
-  <p>muno is a tool for collecting and practising your own vocabulary. It is not a language course and does not provide professional teaching, translation or educational services. The automatic translations, transcriptions, examples and ready-made decks are generated or curated aids that support your own learning: they are provided as is, without a guarantee of accuracy or completeness, and are not a substitute for a course, a dictionary or professional translation.</p>
+  <h2>Security</h2>
+
+  <p>Everything between the app and our servers travels encrypted. Your rows in the database can be read only by your own account: the database enforces that on every table, and the keys that reach the providers above live only on the server, never inside the app. There are no passwords to leak: the sign-in code works once and expires. We never hold payment details. If a breach ever affected your data in a way that put you at risk, we would tell you and the supervisory authority, as the GDPR requires.</p>
+
+  <h2>What muno is, and is not</h2>
+
+  <p>muno is a tool for collecting and practising your own vocabulary. It is not a language course and does not provide professional teaching or translation services. The automatic translations, transcriptions and ready-made decks are generated or curated aids that support your own learning: they can contain mistakes, so check anything that matters. This describes what the service is; it does not limit any rights you have under consumer law. The terms under which the app is licensed to you are Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a>.</p>
 
   <h2>Children</h2>
 
@@ -411,12 +536,15 @@
 
   <h2>Changes to this policy</h2>
 
-  <p>If we change how muno handles data, we will update this page and change the date at the top. If a change materially affects your rights, we will tell you in the app before it takes effect.</p>
+  <p>If we change how muno handles data, we will update this page and change the date at the top. Every earlier version of this page is in its <a href="https://github.com/JorkaI/muno-legal/commits/main">public history on GitHub</a>. If a change materially affects your rights, we will tell you in the app before it takes effect.</p>
+
+  <h2>This website</h2>
+
+  <p>This page and the Support page are hosted on GitHub Pages. GitHub may record the IP address of visitors under its own privacy statement. We set no cookies here and run no analytics on this site.</p>
 
   <h2>Contact</h2>
 
   <p>Heorhii Hakhokidze<br>
-  Pułaskiego 19, 40-276 Katowice, Poland<br>
   <a href="mailto:jgahokidze@gmail.com">jgahokidze@gmail.com</a></p>
 
   <p>For help using the app — subscriptions, restores, refunds, deleting your account — see the <a href="support/">Support page</a>.</p>
