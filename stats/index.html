@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#EBECF2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C121D" media="(prefers-color-scheme: dark)">
+  <title>muno · статистика</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235A3ECC'/%3E%3Cpath d='M8 22V14M14 22V10M20 22V16M26 22V12' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/supabase-2.110.0.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="wordmark">muno</span> <span class="brand-sub">статистика</span></div>
+    <span class="env" id="env" hidden></span>
+    <button type="button" class="link" id="signout" hidden>Выйти</button>
+  </header>
+  <main id="app" aria-live="polite">
+    <p class="boot">Загружаю…</p>
+  </main>
+  <footer class="foot">
+    Анонимно: ни аккаунта, ни устройства, ни точного времени — только порядок событий внутри одной сессии.
+    Дни считаются по UTC.
+  </footer>
+  <noscript><p class="boot">Странице нужен JavaScript.</p></noscript>
+</body>
+</html>
