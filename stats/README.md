@@ -28,9 +28,11 @@ what is recorded — in `docs/ANALYTICS.md`.
   time), signing in and the reminder question, visits, practice, adding words and
   translation times, the library, limits and the paywall's doors, and failures.
 - **The states:** sign-in → code → the report; «Статистики в проде пока нет» when the
-  database has no `analytics_report` yet (`PGRST202` — production before 1.2.0);
-  «Нет доступа» (`42501`); a failure with a retry; a period with no events. A refetch keeps
-  the last report on screen, dimmed.
+  database has no `analytics_report` (`PGRST202` — a project without migration 033);
+  «Нет доступа» (`42501`); a failure with a retry; and a period with no events, which says
+  the events come from the app's 1.2.0 on and offers the example — what production shows
+  between 2026-10-15 (031 and 033 applied there) and the first people on 1.2.0. A refetch
+  keeps the last report on screen, dimmed.
 - **`?demo`** draws the page from `demo.json`: a made-up month (36 311 events, every event
   kind) summed by the real function and shifted to end today. A yellow banner says so.
 
